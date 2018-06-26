@@ -30,16 +30,12 @@ const sorted = {
 run({
   out: viz.visualize,
   insertion_reversed: {
-    run: bubble,
+    run: insertion,
     ...reversed,
   },
   insertion_random: {
     run: insertion,
     ...randomized,
-  },
-  bubble_reversed: {
-    run: bubble,
-    ...reversed,
   },
   selection_reversed: {
     run: selection,
@@ -49,8 +45,12 @@ run({
     run: selection,
     ...randomized,
   },
-  bubble_sorted: {
+  bubble_reversed: {
     run: bubble,
-    ...sorted,
+    ...reversed,
+  },
+  bubble_random: {
+    run: bubble,
+    ...randomized,
   },
 })
