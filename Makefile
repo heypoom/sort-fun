@@ -3,6 +3,6 @@ run: main
 
 main:
 	clear
-	yarn start
+	node index
 
 $(V).SILENT:
