@@ -3,6 +3,6 @@ run: main
 
 main:
 	clear
-	node sort
+	yarn start
 
 $(V).SILENT:

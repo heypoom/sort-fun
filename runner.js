@@ -3,14 +3,14 @@ const chalk = require('chalk')
 
 function runner({run, out = x => x, ...tests}) {
   Object.entries(tests).forEach(([name, test], i) => {
-    const result = [...test.input]
+    const output = [...test.input]
 
     // prettier-ignore
     console.log(chalk.yellow.bold(`------ CASE ${i + 1}: ${name.toUpperCase()} ------`))
 
     const exec = test.run || run
+    exec(output)
 
-    const output = exec(result)
     console.log()
 
     try {

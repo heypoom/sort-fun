@@ -1,0 +1,11 @@
+{
+  "name": "sort-fun",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:phoomparin/sort-fun.git",
+  "author": "Phoomparin Mano <work@phoom.in.th>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index"
+  }
+}
