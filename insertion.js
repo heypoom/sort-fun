@@ -15,7 +15,7 @@ function insertionSort(list) {
       j--
     }
 
-    viz(list, i, j)
+    // viz(list, j, i)
     list[j] = el
   }
 

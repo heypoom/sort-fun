@@ -12,14 +12,20 @@ const insertion = require('./insertion')
 
 const gen = len => [...Array(len)].map((_, i) => i + 1)
 
+const shuffle = list =>
+  list
+    .map(a => [Math.random(), a])
+    .sort((a, b) => a[0] - b[0])
+    .map(a => a[1])
+
 const reversed = {
   input: gen(6).reverse(),
   output: gen(6),
 }
 
 const randomized = {
-  input: [1, 5, 2, 4, 3],
-  output: gen(5),
+  input: shuffle(gen(6)),
+  output: gen(6),
 }
 
 const sorted = {
